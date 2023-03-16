@@ -84,7 +84,7 @@ address {
 
 img {
   display: block;
-  /* max-width: 100%; */
+  max-width: 100%;
   height: auto;
 }
 
@@ -218,22 +218,23 @@ body {
 
 /* STUDIO PAGE */
 .hero {
-  background-color: var(--hero-backround);
-  padding-top: 188px;
-  padding-bottom: 188px;
-  max-width: 1440px;
-  height: 600px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  width: 100%;
+  height: 100%;
+  
   background-image: linear-gradient(to right, var(--gradient), var(--gradient)),
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 0 auto;
+
 }
 
 .hero-header {
-  font-size: 56px;
-  line-height: 1.07;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--hero-text-color);
   display: flex;
@@ -254,7 +255,7 @@ body {
   border-radius: 4px;
   color: var(--hero-text-color);
   display: block;
-  margin: 64px auto 0;
+  margin: 72px auto 0;
   padding: 16px 32px;
   border: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -267,50 +268,62 @@ body {
 }
 
 /*блок Наши цілі*/
+/* .content {
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+} */
 
-.content {
+.section {
   padding-bottom: 0;
+  padding: 0 auto;
+  width: 100%;
+
+}
+.content-list > .content-block {
+  width: 100%;
+}
+ .content-block {
+  width: 100%;
+ }
+.content-block:not(:last-child) {
+  margin-bottom: 72px;
 }
 
-.content-list {
-  display: flex;
-  justify-content: space-between;
+.content-pic {
+  display: none;
+  justify-content: center;
+  
 }
 
 .content-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  margin-top: 8px;
+  margin-top: 8px
+
 }
 
 .content-item {
+  width: 100%;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: var(--primary-text-color);
   margin-top: 8px;
 }
 
-/* SECTION "What are we doing" */
 
-.title {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--title-text-color);
-  margin-bottom: 72px;
-}
-
-.content-img-list {
-  display: flex;
-  justify-content: space-between;
-}
 
 /* Секція "Наша команда" */
+.team {
+background-color: var(--Light-mode-backgrounds
+);
+}
 
 .team-hed-item {
   display: flex;
@@ -368,7 +381,14 @@ body {
   text-align: center;
   color: var(--primary-text-color);
 }
+/* SECTION "What are we doing" */
 
+.title {
+  display: none;
+}
+.content-img-list {
+  display: none;
+}
 /* меню "Фильтр" сторінка "Портфоліо" */
 
 .filter {
@@ -737,31 +757,7 @@ display: flex;
   outline: none;
 }
 
-.content-pic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 112px;
-  width: 264px;
-  border-radius: 4px;
-  background-color: var(--Light-mode-backgrounds);
-}
-.icon-antenna::before {
-  content: "";
-  background-image: url(../images/antenna\ 1.svg);
-}
-.icon-clock::before {
-  content: "";
-  background-image: url(../images/clock\ 1.svg);
-}
-.icon-diagram::before {
-  content: "";
-  background-image: url(../images/diagram\ 1.svg);
-}
-.icon-astronaut::before {
-  content: "";
-  background-image: url(../images/astronaut\ 1.svg);
-}
+
 
 /*.icon {
   display: inline-block;
@@ -803,7 +799,7 @@ display: flex;
   letter-spacing: 0.02em;
   color: var(--cover-text);
   background-color: var(--overlay-bgc);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
 }
@@ -827,6 +823,7 @@ display: flex;
 }
 
 .project-cover-wrap {
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -1029,6 +1026,13 @@ display: flex;
   .main {
     padding-top: 48px;
   }
+  .content {
+    margin: 0;
+  }
+  
+
+
+  
 }
 
 /* =========== 780============ */
@@ -1041,6 +1045,7 @@ display: flex;
 
   .project > .project-cont {
     flex-basis: calc(100% / 2 - 24px);
+    margin-right: 24px;
     /* margin-left: 24px;
     margin-top: 72px; */
   }
@@ -1055,6 +1060,48 @@ display: flex;
   .team-hed-item > .item-card {
     flex-basis: calc(100% / 2 - 24px);
   }
+
+  /* =============  Hero ============= */
+  .hero {  
+    padding-top: 112px;
+    padding-bottom: 112px;
+    width: 100%;
+    height: 436px;
+     }
+     section > .container {
+      max-width: 768px;
+}
+ /* SECTION "What are we doing" */
+
+ .title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-text-color);
+  margin-bottom: 72px;
+}
+.content-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.content-img-list {
+  display: flex;
+  justify-content: space-between;
+}
+.content-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+  margin-top: 8px;
+.content-pic {
+  display: flex;
+}
 }
 
 /* ================= 1200 ================ */
@@ -1069,11 +1116,12 @@ display: flex;
   }
   .section > .container {
     max-width: 1158px;
-    padding-bottom: 120px;
+    
   }
   .project > .project-cont {
     /* margin-left: 24px;
     margin-top: 72px; */
+    margin-right: 24px;
     flex-basis: calc(100% / 3 - 24px);
   }
   .filter {
@@ -1089,6 +1137,83 @@ display: flex;
   /* Team */
   .team-hed-item > .item-card {
     flex-basis: calc(100% / 4 - 24px);
-   
+  }
+
+    /*  =====  Hero =====  */
+
+   .hero {  
+  padding-top: 188px;
+  padding-bottom: 188px;
+  max-width: 1440px;
+  height: 600px;
+  margin: 0 auto;
+   }
+   .hero-header {
+    font-size: 56px;
+    line-height: 1.07;
+   }
+
+   /* our advantages */
+   .content-list {
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .content-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    width: 264px;
+    border-radius: 4px;
+    background-color: var(--Light-mode-backgrounds);
+  }
+  .icon-antenna::before {
+    content: "";
+    background-image: url(../images/antenna\ 1.svg);
+  }
+  .icon-clock::before {
+    content: "";
+    background-image: url(../images/clock\ 1.svg);
+  }
+  .icon-diagram::before {
+    content: "";
+    background-image: url(../images/diagram\ 1.svg);
+  }
+  .icon-astronaut::before {
+    content: "";
+    background-image: url(../images/astronaut\ 1.svg);
+  }
+
+  /* SECTION "What are we doing" */
+
+.title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-text-color);
+  margin-bottom: 72px;
+}
+.content-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.content-img-list {
+  display: flex;
+  justify-content: space-between;
+}
+.content-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+  margin-top: 8px;
+.content-pic {
+  display: flex;
 }
 }
