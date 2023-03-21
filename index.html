@@ -19,18 +19,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container had">
         <nav class="navigation">
           <a class="header-logo" href="./index.html">
-            <span class="web">web</span>studio</a
-          >
+            <span class="web">web</span>studio</a>
 
-          <ul class="site-nav list">
+         <ul class="site-nav">
             <li class="item-nav">
               <a class="link-nav line current" href="index.html">Studio</a>
             </li>
@@ -41,9 +40,16 @@
               <a class="link-nav" href="">Contacts</a>
             </li>
           </ul>
+
+          <button type="button" class="menu-button">
+            <svg class="burger-menu" width="32" height="22">
+              <use href="./images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+          </button>
+
         </nav>
         <address>
-          <ul class="adr-items list">
+          <ul class="adr-items">
             <li class="adr">
               <a class="link-nav" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -57,7 +63,94 @@
           </ul>
         </address>
       </div>
-    </header> -->
+     
+    <div class="mob-menu">
+        
+      <div class="container">
+
+        <nav class="navigation">
+        <button type="button" class="menu-button-close">
+          <svg class="close-menu" width="8" height="8">
+            <use href="./images/symbol-defs.svg#icon-close-black-mob"></use>
+              </svg>
+        </button>
+        <ul class="mob-site-nav">
+          <li class="mob-item-nav">
+            <a class="mob-link-nav link line current" href="index.html">Studio</a>
+          </li>
+          <li class="mob-item-nav">
+            <a class="mob-link-nav link line" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="mob-item-nav">
+            <a class="mob-link-nav link " href="">Contacts</a>
+          </li>
+        </ul>
+      
+        
+
+       </nav>
+       <div>
+       <address>
+
+        <ul class="mob-adr-items">
+          <li class="mob-adr-tel">
+            <a class="mob-link-tel link " href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mob-adr-mail">
+            <a class="mob-link-mail link " href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+         
+        </ul>
+       </address>
+
+       <div class="mob-soc">
+       <ul class="mob-soc-list">
+        <li class="mob-soc-item">
+          <a class="mob-soc-link link" href="">
+            <svg class="mob-soc-icon" width="24" height="24">
+              <use
+                href="./images/symbol-defs.svg#icon-instagram"
+              ></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="mob-soc-item">
+          <a class="mob-soc-link link" href="">
+            <svg class="mob-soc-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="mob-soc-item">
+          <a class="mob-soc-link link" href="">
+            <svg class="mob-soc-icon" width="24" height="24">
+              <use
+                href="./images/symbol-defs.svg#icon-facebook"
+              ></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="mob-soc-item">
+          <a class="mob-soc-link link" href="">
+            <svg class="mob-soc-icon" width="24" height="24">
+              <use
+                href="./images/symbol-defs.svg#icon-linkedin"
+              ></use>
+            </svg>
+          </a>
+        </li>
+       </ul>
+       </div>
+      </div>
+    </div>
+    </header>
     <main>
       <section class="section hero">
         <div class="container">
@@ -84,9 +177,8 @@
               </div>
               <h3 class="content-title">Strategy</h3>
               <p class="content-item">
-                Our goal is to identify the business 
-                problem to walk away with the 
-                perfect and creative solution.
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
               </p>
             </li>
             <li class="content-block">
@@ -97,8 +189,7 @@
               </div>
               <h3 class="content-title">Punctuality</h3>
               <p class="content-item">
-                Bring the key message to the 
-                brand's audience for the best price 
+                Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
@@ -110,9 +201,8 @@
               </div>
               <h3 class="content-title">Diligence</h3>
               <p class="content-item">
-                Research and confirm brands that 
-                present the strongest digital growth 
-                opportunities and minimize risk.
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
               </p>
             </li>
             <li class="content-block">
@@ -123,15 +213,14 @@
               </div>
               <h3 class="content-title">Technologies</h3>
               <p class="content-item">
-                Design practice focused on digital 
-                experiences. We bring forth a deep 
-                passion for problem-solving.
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
               </p>
             </li>
           </ul>
         </div>
       </section>
-      
+
       <section class="section what-section">
         <div class="container">
           <h2 class="title">What are we doing</h2>
@@ -149,7 +238,7 @@
         </div>
       </section>
 
-      <section class="section team ">
+      <section class="section team">
         <div class="container">
           <h2 class="title-team">our team</h2>
           <ul class="team-hed-item">
@@ -554,7 +643,7 @@
 
             <label
               ><span class="input-text-second">Comment</span>
-             <textarea
+              <textarea
                 class="modal-input coment-area"
                 name="user's_comment"
                 placeholder="Text input"
