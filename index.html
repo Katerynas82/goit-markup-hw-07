@@ -21,13 +21,26 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles_mob.css" />
+    <link rel="stylesheet" href="./css/styles_tab.css" />
+    <link rel="stylesheet" href="./css/styles_desk.css" />
+   
+    
   </head>
   <body>
     <header class="page-header">
       <div class="container had">
         <nav class="navigation">
+          <div class="logo-burger">
           <a class="header-logo" href="./index.html">
             <span class="web">web</span>studio</a>
+            
+          <button type="button" class="menu-button" data-menu-open>
+            <svg class="burger-menu" width="32" height="22">
+               <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+          </div>
 
          <ul class="site-nav">
             <li class="item-nav">
@@ -41,14 +54,11 @@
             </li>
           </ul>
 
-          <button type="button" class="menu-button">
-            <svg class="burger-menu" width="32" height="22">
-              <use href="./images/symbol-defs.svg#icon-menu"></use>
-                </svg>
-          </button>
+         
 
-        </nav>
-        <address>
+         </nav>
+         <address>
+        
           <ul class="adr-items">
             <li class="adr">
               <a class="link-nav" href="mailto:info@devstudio.com"
@@ -60,16 +70,18 @@
                 >+11 (000) 111-11-11</a
               >
             </li>
-          </ul>
-        </address>
-      </div>
+           </ul>
+          </div>
+         </address>
+        
+    </div>
      
-    <div class="mob-menu">
+    <div class="mob-menu is-hidden" data-menu>
         
       <div class="container">
 
         <nav class="navigation">
-        <button type="button" class="menu-button-close">
+        <button type="button" class="menu-button-close" data-menu-close>
           <svg class="close-menu" width="8" height="8">
             <use href="./images/symbol-defs.svg#icon-close-black-mob"></use>
               </svg>
@@ -676,6 +688,7 @@
       </div>
     </div>
     <script src="./JS/modal.js"></script>
+    <script src="./JS/menu.js"></script>
     <script src=".js-speaker-form"></script>
   </body>
 </html>
