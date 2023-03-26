@@ -10,7 +10,7 @@
     padding-bottom: 188px;
   }
   .container {
-    max-width: 1158px;
+    min-width: 1158px;
   }
 
   /*  =====  Hero =====  */

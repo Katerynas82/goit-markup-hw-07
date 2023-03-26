@@ -19,43 +19,128 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/styles_mob.css" />
+  <link rel="stylesheet" href="./css/styles_tab.css" />
+  <link rel="stylesheet" href="./css/styles_desk.css" />
   </head>
   <body>
-    <!-- <header class="page-header">
-      <div class="container had">
+    <header class="page-header">
+      <div class="container container-header">
         <nav class="navigation">
+          <!-- <div class="logo-burger"> -->
           <a class="header-logo" href="./index.html">
-            <span class="web">web</span>studio</a
-          >
-
-          <ul class="site-nav list">
+            <span class="web">web</span>studio</a>
+  
+          <button type="button" class="menu-button" data-menu-open>
+            <svg class="burger-menu" width="32" height="22">
+              <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+  
+  
+          <ul class="site-nav">
             <li class="item-nav">
-              <a class="link-nav line" href="index.html">Studio</a>
+              <a class="link-nav line current" href="index.html">Studio</a>
             </li>
             <li class="item-nav">
-              <a class="link-nav line current" href="portfolio.html"
-                >Portfolio</a
-              >
+              <a class="link-nav line" href="portfolio.html">Portfolio</a>
             </li>
-            <li class="item-nav"><a class="link-nav" href="">Contacts</a></li>
+            <li class="item-nav">
+              <a class="link-nav" href="">Contacts</a>
+            </li>
           </ul>
         </nav>
+        <!-- <div class="address"> -->
         <address>
-          <ul class="adr-items list">
+  
+          <ul class="adr-items">
             <li class="adr">
-              <a class="link-nav" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="link-nav" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li class="adr">
-              <a class="link-nav" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
+              <a class="link-nav" href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
       </div>
-    </header> -->
+  
+      <div class="mob-menu is-hidden" data-menu>
+  
+        <div class="container">
+  
+          <nav class="navigation">
+            <button type="button" class="menu-button-close" data-menu-close>
+              <svg class="close-menu" width="8" height="8">
+                <use href="./images/symbol-defs.svg#icon-close-black-mob"></use>
+              </svg>
+            </button>
+            <ul class="mob-site-nav">
+              <li class="mob-item-nav">
+                <a class="mob-link-nav link line current" href="index.html">Studio</a>
+              </li>
+              <li class="mob-item-nav">
+                <a class="mob-link-nav link line" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="mob-item-nav">
+                <a class="mob-link-nav link " href="">Contacts</a>
+              </li>
+            </ul>
+  
+  
+  
+          </nav>
+          <div>
+            <address>
+  
+              <ul class="mob-adr-items">
+                <li class="mob-adr-tel">
+                  <a class="mob-link-tel link " href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+                <li class="mob-adr-mail">
+                  <a class="mob-link-mail link " href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+  
+              </ul>
+            </address>
+  
+            <div class="mob-soc">
+              <ul class="mob-soc-list">
+                <li class="mob-soc-item">
+                  <a class="mob-soc-link link" href="">
+                    <svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+  
+                <li class="mob-soc-item">
+                  <a class="mob-soc-link link" href="">
+                    <svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+  
+                <li class="mob-soc-item">
+                  <a class="mob-soc-link link" href="">
+                    <svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+  
+                <li class="mob-soc-item">
+                  <a class="mob-soc-link link" href="">
+                    <svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </header>
     <main>
       <section class="section main">
         <div class="container">
@@ -293,45 +378,45 @@
     <footer>
       <section class="section footer">
         <div class="container footer-main">
-          <ul class="footer-block list">
-            <li>
+        
+          <ul class="footer-block">
+            <li class="footer-list">
               <a class="footer-logo" href="./index.html">
-                <span class="web footer-logo">web</span>studio</a
-              >
+                <span class="web">web</span>studio</a>
               <h2 class="footer-item">
                 Increase the flow of customers and sales for your business with
                 digital marketing & growth solutions.
               </h2>
             </li>
             <li class="social-block">
-              <p class="hed">Social media</p>
-              <ul class="footer-soc-list list">
+              <p class="subscribe-block-hed">Social media</p>
+              <ul class="footer-soc-list">
                 <li class="footer-soc-item">
-                  <a class="footer-soc-link link" href="">
+                  <a class="footer-soc-link" href="">
                     <svg class="footer-soc-icon" width="24" height="24">
                       <use href="./images/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-
+  
                 <li class="footer-soc-item">
-                  <a class="footer-soc-link link" href="">
+                  <a class="footer-soc-link" href="">
                     <svg class="footer-soc-icon" width="24" height="24">
                       <use href="./images/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-
+  
                 <li class="footer-soc-item">
-                  <a class="footer-soc-link link" href="">
+                  <a class="footer-soc-link" href="">
                     <svg class="footer-soc-icon" width="24" height="24">
                       <use href="./images/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-
+  
                 <li class="footer-soc-item">
-                  <a class="footer-soc-link link" href="">
+                  <a class="footer-soc-link" href="">
                     <svg class="footer-soc-icon" width="24" height="24">
                       <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
@@ -339,22 +424,17 @@
                 </li>
               </ul>
             </li>
-
-            <li>
-              <div class="subscribe-block">
-                <h2 class="hed">Subscribe</h2>
-                <form class="footer-main">
-                  <input
-                    class="footer-subscribe"
-                    type="email"
-                    name="user_email"
-                    placeholder="E-mail"
-                  />
-                  <div>
+  
+            <li class="subscribe-block">
+              
+                <h2 class="subscribe-block-hed">Subscribe</h2>
+                <form class="footer-form">
+                  <input class="footer-subscribe" type="email" name="user_email" placeholder="E-mail" />
+            <li class="button-subsc">
                     <button class="footer-button" type="submit">
                       <span class="subscribe-icon">Subscribe</span>
                     </button>
-                  </div>
+            </li>
                 </form>
               </div>
             </li>
