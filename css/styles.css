@@ -625,7 +625,7 @@ body {
   padding-right: 80px;
   
 }
- .foter-list {
+ .footer-list {
   
   display: flex;
   flex-direction: column;
@@ -721,9 +721,6 @@ body {
   letter-spacing: 0.04em;
   color: var(--hero-text-color);
   padding: 8px 0 8px;
-}
-.footer-main {
- 
 }
 .subscribe-block-hed {
   

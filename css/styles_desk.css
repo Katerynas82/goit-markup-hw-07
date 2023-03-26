@@ -509,27 +509,6 @@
     text-decoration: none;
     margin-top: 100px;
   }
-
-  
-
-  /*  Icons Sotial Media */
-
-  /*.icons {
-  display: flex;
-  }
-  .icon {
-    width: 40px;
-    height: 40px;
-  }
-    
-   .icon-item {
-    padding: 0;
-    gap: 32px;
-    background: var(--background);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
-  }
-   */
    
    /*============== CuSTOMER=============== */
   .customer {
@@ -540,43 +519,34 @@
   }
 
   .customer-item {
-    margin-bottom: 0;
-    
+
+    margin: 0;
   }
-  .customer-item-link {
+  .container-customer {
+    width: 100%;
+      margin-bottom: 0;
+     
+      }
+   
+       /* ==========FOOTER============= */
+
+ .footer-main {
+    padding-left: 16px;
+    padding-right: 16px0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 168px;
-    height: 88px;
-    border: 1px solid var(--border-icon);
-    border-radius: 4px;
-    color: var(--border-icon);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 auto;
   }
-  .customer-item-icon {
-    fill: currentColor;
-  }
-  .customer-item-link:is(:hover, :focus) {
-    border: 1px solid var(--button-h-f);
-    color: var(--button-h-f);
-  }
-
-  /*
-  .customer-item-icon:is(:hover, :focus) {
-    fill: var(--button-h-f);
-  }*/
-
+    
   .footer-block {
     display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+   
   }
-  .hed {
-    color: var(--footer-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+  .footer-form {
+    display: flex;
   }
+ 
   .footer-soc-list {
     display: flex;
     justify-content: center;
@@ -596,6 +566,7 @@
     margin-left: 80px;
     display: flex;
     flex-direction: column;
+    margin-top: 0;
   }
 
   .footer-soc-link {
@@ -644,9 +615,7 @@
     color: var(--hero-text-color);
     padding: 8px 0 8px;
   }
-  .footer-main {
-    display: flex;
-  }
+ 
 
   .footer-button {
     width: 165px;
@@ -670,12 +639,6 @@
     border: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
-  /* .subscribe-icon {
-   fill: currentColor
-     
-    
-   }  */
 
   .footer-button .subscribe-icon::after {
     content: "";
@@ -973,3 +936,4 @@
     outline: none;
   }
 }
+
