@@ -141,6 +141,7 @@
         ),
         url("../images/hero-bg-tab2x.jpg");
     }
+    }
     .hero-button-item:is(:hover, :focus) {
       background-color: var(--button-h-f);
       color: var(--hero-text-color);
@@ -253,4 +254,4 @@ margin-bottom: 0;
 
 
     }
-}
+
