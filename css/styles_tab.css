@@ -171,16 +171,18 @@
     /* display: flex;
       margin-left: -24px;
       margin-top: -72px; */
-    column-gap: 24px;
+    gap: 72px 24px;
     display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 0;
   }
 
   .content-block {
     /* margin-left: 24px;
       margin-top: 72px; */
     width: calc((100% - 24px) / 2);
+    margin-bottom: 0;
   }
   .content-pic {
     justify-content: center;

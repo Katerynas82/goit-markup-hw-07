@@ -198,28 +198,50 @@ body {
 }
 
 /* ------------ Mob Menu-------------------- */
-/* .mob {
-  padding: 0;
-  height: 100%;
- } */
-.mob-menu {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--modal-bgc);
-  padding-top: 24px;
-  padding-left: 40px;
-  padding-right: 24px;
-  overflow-y: auto;
+
+
+
+.mob-menu.is-open {
+  transform: translateX(0);
 }
+  .mob-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--modal-bgc);
+    padding-top: 24px;
+    padding-left: 40px;
+    padding-right: 24px;
+    overflow-y: auto;
+    transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+    
+     /* анімація з'явлення */
+    
+  }
 .container-mob-menu {
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 24px;
+  width: 416px;
+}
+
+@media screen and (max-width: 479px) {
+  .container-mob-menu {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    width: auto;
+      }
 }
 /* .mob-site-nav {
   margin-bottom: 284px; */
@@ -285,7 +307,8 @@ body {
 }
 .mob-soc-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 56px;
   align-items: center;
   margin-bottom: 24px;
 }
