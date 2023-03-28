@@ -20,6 +20,7 @@
   }
 
   /* ----------Heder-------- */
+  
   .site-nav {
     display: flex;
     margin: auto;
@@ -85,10 +86,16 @@
   }
 
   /* Portfolio */
+  .main{
+    margin-top: -16px;
+  }
 
   .project > .project-cont {
-    flex-basis: calc(100% / 2 - 24px);
-    margin-right: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+   gap: 24px 72px;
+   margin: 72px 0 0;
  /* margin-left: 24px;
         margin-top: 72px; */
   }

@@ -133,16 +133,16 @@ body {
 .web {
   color: var(--first-logo-color);
 }
-/* .page-header {
+.page-header {
   
   width: 100%;
-  min-height: 76px;
+  min-height: 70px;
   top: 0;
   left: 0;
   border-bottom: 1px solid var(--border-button);
   background-color: var(--hero-text-color);
   margin: 0 auto;
-} */
+}
 .navigation {
   width: 100%;
   display: flex;
@@ -162,13 +162,7 @@ body {
   align-items: start;
   padding: 0px;
 }
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
+
 /* .logo-burger {
   display: flex;
   justify-content: space-between;
@@ -198,12 +192,6 @@ body {
 }
 
 /* ------------ Mob Menu-------------------- */
-
-
-
-.mob-menu.is-open {
-  transform: translateX(0);
-}
   .mob-menu {
     position: fixed;
     top: 0;
@@ -214,11 +202,24 @@ body {
     padding-left: 40px;
     padding-right: 24px;
     overflow-y: auto;
+    z-index: 999;
+    
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
     transform: translateX(100%);
   transition: transform 250ms ease-in-out;
     
      /* анімація з'явлення */
     
+  }
+
+  .mob-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+    transform: translateX(0);
   }
 .container-mob-menu {
   height: 100%;
@@ -517,8 +518,11 @@ body {
 
 .filter {
   display: flex;
+  display: flex;
   justify-content: start;
   flex-wrap: wrap;
+  
+  
 }
 
 .item-btn:is(:hover, :focus) {
@@ -527,14 +531,14 @@ body {
   outline: none;
 }
 .item-btn {
-  margin-right: 24px;
-  margin-top: 16px;
+  
+  margin: 16px 24px 0 0;
   transition: shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter .item-btn:not(:last-child) {
+/* .filter .item-btn:not(:last-child) {
   margin-right: 24px;
-}
+} */
 
 /* кнопка сторинки Портфоліо */
 .button-item {
@@ -564,6 +568,9 @@ body {
 
 /*секція Портфоліо*/
 
+.main{
+  padding: 48px 16px 0;
+}
 .project {
   display: flex;
   justify-content: space-between;
@@ -996,9 +1003,9 @@ justify-content: space-between;
   opacity: 0;
   pointer-events: none;
 }
-/* .no-scroll {
-    overflow: hidden;
-} */
+/* .no-scroll на початку css*/
+
+
 .modal-form {
 }
 .modal-form-title {
